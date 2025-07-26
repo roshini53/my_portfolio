@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.desktop-links {
+  display: flex;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-links {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}

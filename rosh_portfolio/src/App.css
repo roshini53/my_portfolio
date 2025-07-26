@@ -1,0 +1,93 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #d5bfff, #bcd4ff);
+  color: #222;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  margin-bottom: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.navbar ul li {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Main Content Styles */
+.page {
+  padding: 2rem;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Contact Styles */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-links a {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page {
+    padding: 4rem;
+  }
+}
